@@ -6,23 +6,27 @@ Bot sederhana menggunakan NodeJs, dengan library:
 
 # Instalasi
 
-- clone repository ini
+- buka cmd, lalu clone repository ini
   ```
-  $ git clone https://github.com/b1354/mitaka-bot
-  $ cd mitaka-bot
+  git clone https://github.com/b1354/mitaka-bot
+  cd mitaka-bot
   ```
 
 - Install dependencies
   ```
-  $ npm install
+  npm install
   ```
 
 - Jalankan program
   ```
-  $ node .
+  node .
   ```
 
   Jika ingin menjalankan dalam proses development:
   ```
-  $ npm run dev
+  npm run dev
   ```
+  > __NOTE:__
+  program yang berjalan akan langsung direstart ketika perubahan di save
+  dan mulai kembali secara otomatis dalam mode ini,
+  sehingga tidak perlu mengetik ``node .`` lagi.
