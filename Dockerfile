@@ -10,8 +10,9 @@ RUN \
   apt-get install -y google-chrome-stable && \
   rm -rf /var/lib/apt/lists/*s
 
-RUN npm install
+
 COPY package*.json ./
 COPY . .
+RUN npm install
 
 CMD ["npm", "run", "start"]
