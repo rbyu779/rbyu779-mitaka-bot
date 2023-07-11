@@ -15,4 +15,6 @@ COPY package*.json ./
 COPY . .
 RUN npm install
 
+EXPOSE 8000/tcp
+
 CMD ["npm", "run", "start"]
