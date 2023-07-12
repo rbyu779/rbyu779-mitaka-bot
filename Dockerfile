@@ -11,9 +11,9 @@ RUN \
   rm -rf /var/lib/apt/lists/*s
 
 
-# COPY package*.json ./
-# COPY . .
-# RUN npm install
+COPY package*.json ./
+COPY . .
+RUN npm install
 
 EXPOSE 8000/tcp
 
