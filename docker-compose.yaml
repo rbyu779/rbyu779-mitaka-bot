@@ -1,0 +1,6 @@
+version: '1'
+services:
+  mitaka:
+    image: mitaka:latest
+    volumes:
+      - ./:/app

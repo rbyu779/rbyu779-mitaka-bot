@@ -5,7 +5,7 @@ const {messageHandler} = require('./eventHandler.js');
 const client = new Client({
   authStrategy: new LocalAuth(),
   puppeteer: {
-    args: ['--no-sanbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   }
 });
 
