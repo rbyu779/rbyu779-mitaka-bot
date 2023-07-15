@@ -13,8 +13,8 @@ RUN \
 
 # COPY package*.json ./
 # COPY . .
-# RUN npm install
+RUN npm install
 
-# EXPOSE 8000/tcp
+EXPOSE 8000/tcp
 
 CMD ["npm", "run", "start"]
